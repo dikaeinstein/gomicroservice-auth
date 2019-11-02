@@ -1,0 +1,4 @@
+.dockerignore
+.circleci
+terraform
+.env*

@@ -1,0 +1,12 @@
+.env*
+vendor
+auth
+#  Local .terraform directories
+**/.terraform/*
+# .tfstate files
+*.tfstate
+*.tfstate.*
+# .tfvars files
+**/*.tfvars
+.DS_Store
+auth-Dockerrun.zip

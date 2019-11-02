@@ -1,0 +1,13 @@
+version: '3.1'
+services:
+  auth:
+    image: gomicroservice-auth
+    build: .
+    ports:
+      - 8081:8081
+      - 8125:8125/udp
+    environment:
+      - DOGSTATSD=localhost:8125
+      - RSA_PRIVATE_KEY=$RSA_PRIVATE_KEY
+      - DD_SITE=datadoghq.eu
+      - DD_API_KEY=$DATADOG_API_KEY
